@@ -6,7 +6,7 @@
     <div class="container">
         <% int type = Convert.ToInt32(Request.QueryString["type"]); %>
         <div class="category-header">
-            <span class="left-text"><%= (type == 1 ? "Sản phẩm khuyến mãi" : "Mã giảm giá") %></span>
+            <span class="left-text"><%= (type == 1 ? "Sản phẩm khuyến mãi   " : "Mã giảm giá") %></span>
             <div class="horizontal-line"></div>
         </div>
         <% if (type == 1) { %>
