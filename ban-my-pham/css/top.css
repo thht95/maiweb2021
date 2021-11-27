@@ -1,0 +1,40 @@
+﻿
+/*CSS cho phần top (đăng ký, đăng nhập, thông tin)*/
+#top {
+    height: 20px;
+    margin: auto;
+    padding: 10px 0;
+    border-bottom: solid 1px #e5e6ec;
+    display: flex;
+}
+
+.news {
+    width: 70%;
+    margin-right: 20px;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 30%;
+}
+
+.account a {
+    text-transform: uppercase;
+    margin-right: 15px;
+    color: #555555;
+    font-weight: bold;
+}
+
+.account .top-icon {
+    height: 15px;
+    width: auto;
+    object-fit: contain;
+    margin-right: 3px;
+}
+
+a.active {
+    color: #fb2644;
+}

@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="ban_my_pham.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Mỹ phẩm Anniskin - Trang quản trị</title>
+    <link href="../css/admin/nav.css" rel="stylesheet" />
+    <link href="../css/admin/main.css" rel="stylesheet" />
+    <link href="../css/admin/table.css" rel="stylesheet" />
+    <link href="../css/form.css" rel="stylesheet" />
+    <script type="text/javascript" src="../js/admin/nav.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <% string url = HttpContext.Current.Request.Url.AbsoluteUri; %>
+    <div id="top">
+        <div class="home">
+            <a href="/TrangChu.aspx" style="text-transform: none">
+                <img class="top-icon" src="/images/home.png" />
+                <span>Trang chủ</span>
+            </a>
+        </div>
+        <div class="account">
+            <% if (Convert.ToBoolean(Session["LoggedIn"]))
+                { %>
+            <% ban_my_pham.User user = (ban_my_pham.User)Session["User"]; %>
+            <a href="/Profile.aspx" style="text-transform: none">
+                <img class="top-icon" src="/images/user.png" />
+                <span><%=user.hoTen %></span>
+            </a>
+            <a href="/Logout.aspx" style="display: flex; align-items: flex-end; margin-left: 20px;" title="Đăng xuất">
+                <img class="top-icon" src="/images/logout.png" /></a>
+            <%} %>
+        </div>
+    </div>
+    <div class="sidebar">
+        <a <% if (url.Contains("LoaiSanPham.aspx")) { Response.Write("class='active'"); } %> href="DanhSachLoaiSanPham.aspx">Loại sản phẩm</a>
+
+        <a <% if (url.Contains("HangSanXuat.aspx")) { Response.Write("class='active'"); } %> href="DanhSachHangSanXuat.aspx">Hãng sản xuất</a>
+
+        <a <% if (url.Contains("SanPham.aspx") && !url.Contains("LoaiSanPham.aspx")) { Response.Write("class='active'"); } %> href="DanhSachSanPham.aspx">Sản phẩm</a>
+
+        <a <% if (url.Contains("MaGiamGia.aspx")) { Response.Write("class='active'"); } %> href="DanhSachMaGiamGia.aspx">Mã giảm giá</a>
+
+        <a <% if (url.Contains("User.aspx")) { Response.Write("class='active'"); } %> href="DanhSachUser.aspx">User</a>
+
+    </div>
+    <div class="content">
+        <form id="form1" runat="server">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </form>
+    </div>
+</body>
+</html>

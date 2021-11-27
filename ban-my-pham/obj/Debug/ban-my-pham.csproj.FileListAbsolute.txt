@@ -1,0 +1,20 @@
+E:\Fithou\Lap trinh web nang cao\BTL\btl-web-nc\ban-my-pham\ban-my-pham\bin\ban-my-pham.dll.config
+E:\Fithou\Lap trinh web nang cao\BTL\btl-web-nc\ban-my-pham\ban-my-pham\bin\ban-my-pham.dll
+E:\Fithou\Lap trinh web nang cao\BTL\btl-web-nc\ban-my-pham\ban-my-pham\bin\ban-my-pham.pdb
+E:\Fithou\Lap trinh web nang cao\BTL\btl-web-nc\ban-my-pham\ban-my-pham\obj\Debug\ban-my-pham.csprojAssemblyReference.cache
+E:\Fithou\Lap trinh web nang cao\BTL\btl-web-nc\ban-my-pham\ban-my-pham\obj\Debug\ban-my-pham.csproj.CoreCompileInputs.cache
+E:\Fithou\Lap trinh web nang cao\BTL\btl-web-nc\ban-my-pham\ban-my-pham\obj\Debug\ban-my-pham.dll
+E:\Fithou\Lap trinh web nang cao\BTL\btl-web-nc\ban-my-pham\ban-my-pham\obj\Debug\ban-my-pham.pdb
+E:\BTLWNC\ban-my-pham\bin\ban-my-pham.dll.config
+E:\BTLWNC\ban-my-pham\bin\ban-my-pham.dll
+E:\BTLWNC\ban-my-pham\bin\ban-my-pham.pdb
+E:\BTLWNC\ban-my-pham\obj\Debug\ban-my-pham.csprojResolveAssemblyReference.cache
+E:\BTLWNC\ban-my-pham\obj\Debug\ban-my-pham.dll
+E:\BTLWNC\ban-my-pham\obj\Debug\ban-my-pham.pdb
+D:\Projects\Web\drive-download-20211127T053518Z-001\BTLWNC\ban-my-pham\bin\ban-my-pham.dll.config
+D:\Projects\Web\drive-download-20211127T053518Z-001\BTLWNC\ban-my-pham\bin\ban-my-pham.dll
+D:\Projects\Web\drive-download-20211127T053518Z-001\BTLWNC\ban-my-pham\bin\ban-my-pham.pdb
+D:\Projects\Web\drive-download-20211127T053518Z-001\BTLWNC\ban-my-pham\obj\Debug\ban-my-pham.csproj.AssemblyReference.cache
+D:\Projects\Web\drive-download-20211127T053518Z-001\BTLWNC\ban-my-pham\obj\Debug\ban-my-pham.csproj.CoreCompileInputs.cache
+D:\Projects\Web\drive-download-20211127T053518Z-001\BTLWNC\ban-my-pham\obj\Debug\ban-my-pham.dll
+D:\Projects\Web\drive-download-20211127T053518Z-001\BTLWNC\ban-my-pham\obj\Debug\ban-my-pham.pdb

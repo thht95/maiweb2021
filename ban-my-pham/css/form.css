@@ -1,0 +1,26 @@
+﻿/*CSS cho form element*/
+input, select, textarea {
+    padding: 12px 20px;
+    margin: 2px 0;
+    border-radius: 4px;
+    outline: none;
+    border: solid 1px #e5e6ec;
+    width: 100%;
+}
+
+input[type=submit], input[type=file], input[type=radio] {
+    width: auto;
+}
+
+.form-group {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.form-group .label {
+    width: 20%;
+}
+.form-group .form-control {
+    width: 80%;
+}

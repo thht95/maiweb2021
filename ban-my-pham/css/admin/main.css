@@ -1,0 +1,154 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.center-children {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.button {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button-xanhduong {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.error-msg {
+    color: red;
+}
+
+span.action {
+    transition-duration: 0.4s;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 5px;
+    border: none;
+}
+
+    span.action:hover {
+        background: #fff;
+        color: black;
+    }
+
+span.view {
+    background: #e7e7e7;
+    color: black;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+}
+
+span.edit {
+    background: #008CBA;
+    color: white;
+    border: 1px solid #008CBA;
+    border-radius: 5px;
+}
+
+span.delete {
+    background: #f44336;
+    color: white;
+    border: 1px solid #f44336;
+    border-radius: 5px;
+}
+
+.phantrang {
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+}
+
+.phantrang span {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #01608f;
+    border-radius: 5px;
+    background: #008CBA;
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.phantrang a {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #008CBA;
+    border-radius: 5px;
+    background: #008CBA;
+    color: white;
+    margin-left: 5px;
+}
+
+.header {
+    position: fixed;
+}
+#top {
+    height: 20px;
+    margin: auto;
+    padding: 10px 0;
+    border-bottom: solid 1px #e5e6ec;
+    display: flex;
+}
+
+.home {
+    width: 70%;
+    margin-left: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-decoration: none;
+}
+.home .top-icon {
+    height: 20px;
+    width: auto;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+.account {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-decoration: none;
+    width: 30%;
+}
+
+.account a, .home a {
+    text-transform: uppercase;
+    margin-right: 15px;
+    color: #555555;
+    font-weight: bold;
+}
+
+.account .top-icon {
+    height: 15px;
+    width: auto;
+    object-fit: contain;
+    margin-right: 3px;
+}
+
+a.active {
+    color: #fb2644;
+}

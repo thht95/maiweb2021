@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Web.master.cs" Inherits="ban_my_pham.Web" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/nav-bar.css" rel="stylesheet" />
+    <link href="css/master.css" rel="stylesheet" />
+    <link href="css/top.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
+    <link href="css/nav.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+    <script type="text/javascript" src="/js/search.js"></script>
+    <asp:ContentPlaceHolder ID="css" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <% string url = HttpContext.Current.Request.Url.AbsoluteUri; %>
+        <div id="top">
+            <div class="news">
+                <marquee class="normal-text">96 Định Công - Quận Hoàng Mai - TP Hà Nội. Hotline: 0987 654 321 </marquee>
+            </div>
+            <div class="account">
+                <% if (Convert.ToBoolean(Session["LoggedIn"]))
+                   { %>
+                <% ban_my_pham.User user = (ban_my_pham.User)Session["User"]; %>
+                <% if (Convert.ToBoolean(Session["ADMIN"]))
+                   { %>
+                <a href="/admin/DanhSachSanPham.aspx" style="text-transform: none">
+                    <span>Quản trị</span>
+                </a>
+                <% } %>
+                <a href="Profile.aspx" style="text-transform: none">
+                    <img class="top-icon" src="images/user.png" />
+                    <span><%=user.hoTen %></span>
+                </a>
+                <a href="Logout.aspx" style="display: flex; align-items: center; margin-left: 20px;" title="Đăng xuất">
+                    <img class="top-icon" src="images/logout.png" /></a>
+                <% }
+                   else
+                   { %>
+                <a <% if (url.Contains("DangKy.aspx")) { Response.Write("class='active'"); } %> href="DangKy.aspx">Đăng ký</a>
+                <a <% if (url.Contains("DangNhap.aspx")) { Response.Write("class='active'"); } %> href="DangNhap.aspx">Đăng nhập</a>
+                <% } %>
+            </div>
+        </div>
+        <div id="header">
+            <a href="TrangChu.aspx">
+                <img src="images/logo.png" class="logo" /></a>
+            <div class="search-form">
+                <input type="text" id="txtSearch" placeholder="Bạn muốn tìm sản phẩm gì..." />
+                <img src="images/search.png" onclick="searchSanPham();" class="search-icon" />
+            </div>
+            <a href="GioHang.aspx" class="cart-link">
+                <img src="images/cart.png" class="cart" />
+                <span class="normal-text">Giỏ hàng (<span id="soLuongTrongGioHang"><%= (Session["SoLuongSanPhamTrongGio"] == null ? 0 : (int)Session["SoLuongSanPhamTrongGio"])  %></span>)</span>
+            </a>
+        </div>
+        <nav class="nav">
+            <%--Lệnh để thêm trạng thái active cho link--%>
+
+            <a <% if (url.Contains("TrangChu.aspx")) { Response.Write("class='active'"); } %> href="TrangChu.aspx">Trang chủ</a>
+            <div class="dropdown">
+                <button disabled class="dropbtn <% if (url.Contains("KhuyenMai.aspx")) { Response.Write("active"); } %>">
+                    Khuyến mãi &#9662;
+                </button>
+                <div class="dropdown-content">
+                    <a href="KhuyenMai.aspx?type=1">Đang khuyến mãi</a>
+                    <a href="KhuyenMai.aspx?type=2">Mã giảm giá</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button disabled class="dropbtn <% if (url.Contains("SanPham.aspx")) { Response.Write("active"); } %>">
+                    Sản phẩm &#9662;
+                </button>
+                <div class="dropdown-content">
+                    <% foreach (ban_my_pham.ProductType pt in dsLoaiSanPham)
+                       { %>
+                    <a href="SanPham.aspx?type=<%=pt.maLoaiSanPham %>"><%=pt.tenLoaiSanPham %></a>
+                    <% } %>
+                </div>
+            </div>
+
+            <a <% if (url.Contains("GioiThieu.aspx")) { Response.Write("class='active'"); } %> href="GioiThieu.aspx">Giới thiệu</a>
+            <a <% if (url.Contains("LienHe.aspx")) { Response.Write("class='active'"); } %> href="LienHe.aspx">Liên hệ</a>
+        </nav>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer>
+            <div class="footer">
+                <div>
+                    <h4>Shop mỹ phẩm Annie</h4>
+                    <img src="images/mail.png" class="icon-footer" />Email: admin@annieshop.com
+                    <br />
+                    <br />
+                    <img src="images/headphone.png" class="icon-footer" />
+                    SĐT: 0987 654 321<br />
+                    <br />
+                    <img src="images/alarm-clock.png" class="icon-footer" />Giờ làm việc: 8:00 AM - 22:00 PM
+                </div>
+                <div>
+                    <h4>Hệ thống cửa hàng</h4>
+                    <img src="images/bando.png" class="icon-footer" />
+                    96 Định Công, Hoàng Mai, Hà Nội
+                    <br />
+                    <br />
+                    <img src="images/bando.png" class="icon-footer" />
+                    18 Kim Mã, Ba Đình, Hà Nội<br />
+                    <br />
+                    <img src="images/bando.png" class="icon-footer" />122 Hoàn Kiếm Hà Nội
+                </div>
+
+                <div>
+                    <h4>Liên kết</h4>
+                    <a runat="server" href="~/TrangChu.aspx">Trang chủ</a>
+                    <br />
+                    <br />
+                    <a runat="server" href="~/SanPham.aspx?type=1">Sản phẩm</a>
+                    <br />
+                    <br />
+                    <a runat="server" href="~/LienHe.aspx">Liên hệ</a>
+                </div>
+            </div>
+        </footer>
+    </form>
+    <asp:ContentPlaceHolder ID="javascript" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

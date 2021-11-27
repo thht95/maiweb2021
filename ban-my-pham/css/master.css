@@ -1,0 +1,249 @@
+﻿/*Các CSS dùng chung cho tất cả các trang*/
+body {
+    font-family: "Roboto", sans-serif;
+    color: #555555;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+
+.normal-text {
+    color: #fb2644;
+    font-size: 11pt;
+}
+
+.center-children {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.right-children {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+
+.button {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.error-msg {
+    color: red;
+}
+
+/*Style cho list sản phẩm*/
+.category-header {
+    display: flex;
+    align-items: center;
+    margin: 3em 0 1em 0;
+}
+
+.category-header .left-text {
+    text-transform: uppercase;
+    color: #fb2644;
+    margin-right: 15px;
+    font-size: 12pt;
+}
+
+.category-header .right-text {
+    color: #fb2644;
+    margin-left: 15px;
+}
+
+.category-header .horizontal-line {
+    height: 2px;
+    flex-grow: 1;
+    background-color: #fb2644;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 17%;
+    border: 1px solid #e5e6ec;
+    margin-bottom: 1em;
+    padding: 10px;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+
+.product .product-details {
+    border-top: 1px solid #e5e6ec;
+}
+
+.product .discount-percentage {
+    background-color: #fb2644;
+    border-radius: 50%;
+    width: 40px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product .discount-percentage span {
+    color: white;
+}
+
+.product img {
+    width: 95%;
+    height: 200px;
+    object-fit: contain;
+    margin: auto;
+}
+
+.product .product-name {
+    height: 60px;
+    font-weight: normal;
+}
+
+.product .discounted-price {
+    color: #fb2644;
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+.product .price {
+    font-size: 9pt;
+    color: #555;
+}
+
+.product-small {
+    display: flex;
+    width: 30%;
+    margin-bottom: 1em;
+    padding: 10px;
+    float: left;
+    margin-right: 10px;
+}
+
+.product-small .product-small-image{
+    width: 90px;
+    height: 90px;
+     border: 1px solid #e5e6ec;
+    object-fit: contain;
+    margin-right: 1em;
+}
+
+.product-small .product-small-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-small .product-small-name {
+    font-weight: normal;
+    margin: 0;
+    font-size: 14px;
+}
+
+.product-small .product-small-sdiscounted-price {
+    margin-top: 1em;
+    color: #fb2644;
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+.product-small .product-small-sprice {
+     font-size: 9pt;
+     color: #555;
+}
+
+.show-all {
+    color: #fb2644;
+}
+
+
+.coupons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.coupon {
+    width: 30%;
+    border: 1px solid #e5e6ec;
+    margin-bottom: 1em;
+    padding: 10px;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+
+.coupon .coupon-details {
+    border-top: 1px solid #e5e6ec;
+}
+
+.coupon .discount-percentage {
+    background-color: #fb2644;
+    border-radius: 50%;
+    width: 60px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coupon .discount-percentage span {
+    color: white;
+}
+
+.coupon img {
+    width: 95%;
+    height: 200px;
+    object-fit: contain;
+    margin: auto;
+}
+
+.coupon .coupon-name {
+    font-weight: normal;
+}
+
+.coupon .coupon-code {
+    text-transform: uppercase;
+}
+
+table {
+    border-collapse: collapse;
+    width: 85%;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+    text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #fb2644;
+  color: white;
+}

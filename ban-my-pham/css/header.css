@@ -1,0 +1,46 @@
+﻿
+/*CSS cho header*/
+#header {
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    width: auto;
+    height: 90px;
+}
+
+.cart {
+    width: auto;
+    height: 25px;
+    object-fit: contain;
+}
+
+.search-form {
+    flex-grow: 1;
+    margin: 0 80px;
+    display: flex;
+}
+
+.search-form input {
+    width: 100%;
+    color: #fb2644;
+}
+
+.search-icon {
+    width: 25px;
+    height: auto;
+    margin-left: -40px;
+    object-fit: contain;
+    cursor: pointer;
+    opacity: .6;
+}
+
+.cart-link {
+    display: flex;
+    align-items: center
+}

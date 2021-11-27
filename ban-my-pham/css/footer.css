@@ -1,0 +1,14 @@
+﻿.footer {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5em auto;
+    border-top: solid 1px #e5e6ec;
+}
+
+.icon-footer{
+    width: 20px;
+    height: auto;
+    object-fit: contain;
+    margin-right: 10px;
+}

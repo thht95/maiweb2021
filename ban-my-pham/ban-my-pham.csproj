@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52F62972-25F7-48E5-B6BA-C817C1094070}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ban_my_pham</RootNamespace>
+    <AssemblyName>ban-my-pham</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\DanhSachHangSanXuat.aspx" />
+    <Content Include="admin\DanhSachLoaiSanPham.aspx" />
+    <Content Include="admin\DanhSachMaGiamGia.aspx" />
+    <Content Include="admin\DanhSachSanPham.aspx" />
+    <Content Include="admin\DanhSachUser.aspx" />
+    <Content Include="admin\SuaHangSanXuat.aspx" />
+    <Content Include="admin\SuaLoaiSanPham.aspx" />
+    <Content Include="admin\SuaMaGiamGia.aspx" />
+    <Content Include="admin\SuaSanPham.aspx" />
+    <Content Include="admin\SuaUser.aspx" />
+    <Content Include="admin\ThemHangSanXuat.aspx" />
+    <Content Include="admin\ThemLoaiSanPham.aspx" />
+    <Content Include="admin\ThemMaGiamGia.aspx" />
+    <Content Include="admin\ThemSanPham.aspx" />
+    <Content Include="admin\ThemUser.aspx" />
+    <Content Include="admin\XemHangSanXuat.aspx" />
+    <Content Include="admin\XemLoaiSanPham.aspx" />
+    <Content Include="admin\XemMaGiamGia.aspx" />
+    <Content Include="admin\XemSanPham.aspx" />
+    <Content Include="admin\XemUser.aspx" />
+    <Content Include="admin\XoaHangSanXuat.aspx" />
+    <Content Include="admin\XoaLoaiSanPham.aspx" />
+    <Content Include="admin\XoaMaGiamGia.aspx" />
+    <Content Include="admin\XoaSanPham.aspx" />
+    <Content Include="admin\XoaUser.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="ChiTietSanPham.aspx" />
+    <Content Include="css\admin\main.css" />
+    <Content Include="css\admin\nav.css" />
+    <Content Include="css\admin\table.css" />
+    <Content Include="css\chi-tiet-san-pham.css" />
+    <Content Include="css\dang-ky.css" />
+    <Content Include="css\dang-nhap.css" />
+    <Content Include="css\footer.css" />
+    <Content Include="css\form.css" />
+    <Content Include="css\gio-hang.css" />
+    <Content Include="css\gioi-thieu.css" />
+    <Content Include="css\header.css" />
+    <Content Include="css\khuyen-mai.css" />
+    <Content Include="css\lien-he.css" />
+    <Content Include="css\master.css" />
+    <Content Include="css\nav.css" />
+    <Content Include="css\change-password.css" />
+    <Content Include="css\profile.css" />
+    <Content Include="css\san-pham.css" />
+    <Content Include="css\top.css" />
+    <Content Include="css\trang-chu.css" />
+    <Content Include="DangKy.aspx" />
+    <Content Include="DangNhap.aspx" />
+    <Content Include="GioHang.aspx" />
+    <Content Include="GioiThieu.aspx" />
+    <Content Include="images\banner.jpg" />
+    <Content Include="images\alarm-clock.png" />
+    <Content Include="images\bando.png" />
+    <Content Include="images\cart.png" />
+    <Content Include="images\coupon.png" />
+    <Content Include="images\headphone.png" />
+    <Content Include="images\home.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logout.png" />
+    <Content Include="images\mail.png" />
+    <Content Include="images\search.png" />
+    <Content Include="images\son.jpg" />
+    <Content Include="images\user.png" />
+    <Content Include="js\admin\hang-san-xuat.js" />
+    <Content Include="js\admin\loai-san-pham.js" />
+    <Content Include="js\admin\ma-giam-gia.js" />
+    <Content Include="js\admin\nav.js" />
+    <Content Include="js\admin\san-pham.js" />
+    <Content Include="js\admin\user.js" />
+    <Content Include="js\chi-tiet-san-pham.js" />
+    <Content Include="js\search.js" />
+    <Content Include="KhuyenMai.aspx" />
+    <Content Include="LienHe.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Profile.aspx" />
+    <Content Include="SanPham.aspx" />
+    <Content Include="ThanhToan.aspx" />
+    <Content Include="TimKiem.aspx" />
+    <Content Include="TrangChu.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DanhSachHangSanXuat.aspx.cs">
+      <DependentUpon>DanhSachHangSanXuat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DanhSachHangSanXuat.aspx.designer.cs">
+      <DependentUpon>DanhSachHangSanXuat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DanhSachLoaiSanPham.aspx.cs">
+      <DependentUpon>DanhSachLoaiSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DanhSachLoaiSanPham.aspx.designer.cs">
+      <DependentUpon>DanhSachLoaiSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DanhSachMaGiamGia.aspx.cs">
+      <DependentUpon>DanhSachMaGiamGia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DanhSachMaGiamGia.aspx.designer.cs">
+      <DependentUpon>DanhSachMaGiamGia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DanhSachSanPham.aspx.cs">
+      <DependentUpon>DanhSachSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DanhSachSanPham.aspx.designer.cs">
+      <DependentUpon>DanhSachSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\DanhSachUser.aspx.cs">
+      <DependentUpon>DanhSachUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\DanhSachUser.aspx.designer.cs">
+      <DependentUpon>DanhSachUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\SuaHangSanXuat.aspx.cs">
+      <DependentUpon>SuaHangSanXuat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\SuaHangSanXuat.aspx.designer.cs">
+      <DependentUpon>SuaHangSanXuat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\SuaLoaiSanPham.aspx.cs">
+      <DependentUpon>SuaLoaiSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\SuaLoaiSanPham.aspx.designer.cs">
+      <DependentUpon>SuaLoaiSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\SuaMaGiamGia.aspx.cs">
+      <DependentUpon>SuaMaGiamGia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\SuaMaGiamGia.aspx.designer.cs">
+      <DependentUpon>SuaMaGiamGia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\SuaSanPham.aspx.cs">
+      <DependentUpon>SuaSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\SuaSanPham.aspx.designer.cs">
+      <DependentUpon>SuaSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\SuaUser.aspx.cs">
+      <DependentUpon>SuaUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\SuaUser.aspx.designer.cs">
+      <DependentUpon>SuaUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ThemHangSanXuat.aspx.cs">
+      <DependentUpon>ThemHangSanXuat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ThemHangSanXuat.aspx.designer.cs">
+      <DependentUpon>ThemHangSanXuat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ThemLoaiSanPham.aspx.cs">
+      <DependentUpon>ThemLoaiSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ThemLoaiSanPham.aspx.designer.cs">
+      <DependentUpon>ThemLoaiSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ThemMaGiamGia.aspx.cs">
+      <DependentUpon>ThemMaGiamGia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ThemMaGiamGia.aspx.designer.cs">
+      <DependentUpon>ThemMaGiamGia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ThemSanPham.aspx.cs">
+      <DependentUpon>ThemSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ThemSanPham.aspx.designer.cs">
+      <DependentUpon>ThemSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ThemUser.aspx.cs">
+      <DependentUpon>ThemUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ThemUser.aspx.designer.cs">
+      <DependentUpon>ThemUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\XemHangSanXuat.aspx.cs">
+      <DependentUpon>XemHangSanXuat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\XemHangSanXuat.aspx.designer.cs">
+      <DependentUpon>XemHangSanXuat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\XemLoaiSanPham.aspx.cs">
+      <DependentUpon>XemLoaiSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\XemLoaiSanPham.aspx.designer.cs">
+      <DependentUpon>XemLoaiSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\XemMaGiamGia.aspx.cs">
+      <DependentUpon>XemMaGiamGia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\XemMaGiamGia.aspx.designer.cs">
+      <DependentUpon>XemMaGiamGia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\XemSanPham.aspx.cs">
+      <DependentUpon>XemSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\XemSanPham.aspx.designer.cs">
+      <DependentUpon>XemSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\XemUser.aspx.cs">
+      <DependentUpon>XemUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\XemUser.aspx.designer.cs">
+      <DependentUpon>XemUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\XoaHangSanXuat.aspx.cs">
+      <DependentUpon>XoaHangSanXuat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\XoaHangSanXuat.aspx.designer.cs">
+      <DependentUpon>XoaHangSanXuat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\XoaLoaiSanPham.aspx.cs">
+      <DependentUpon>XoaLoaiSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\XoaLoaiSanPham.aspx.designer.cs">
+      <DependentUpon>XoaLoaiSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\XoaMaGiamGia.aspx.cs">
+      <DependentUpon>XoaMaGiamGia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\XoaMaGiamGia.aspx.designer.cs">
+      <DependentUpon>XoaMaGiamGia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\XoaSanPham.aspx.cs">
+      <DependentUpon>XoaSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\XoaSanPham.aspx.designer.cs">
+      <DependentUpon>XoaSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\XoaUser.aspx.cs">
+      <DependentUpon>XoaUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\XoaUser.aspx.designer.cs">
+      <DependentUpon>XoaUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTietSanPham.aspx.cs">
+      <DependentUpon>ChiTietSanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChiTietSanPham.aspx.designer.cs">
+      <DependentUpon>ChiTietSanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DangKy.aspx.cs">
+      <DependentUpon>DangKy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DangKy.aspx.designer.cs">
+      <DependentUpon>DangKy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap.aspx.cs">
+      <DependentUpon>DangNhap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DangNhap.aspx.designer.cs">
+      <DependentUpon>DangNhap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="db\RoleDB.cs" />
+    <Compile Include="db\SanPhamDB.cs" />
+    <Compile Include="GioHang.aspx.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GioHang.aspx.designer.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GioiThieu.aspx.cs">
+      <DependentUpon>GioiThieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GioiThieu.aspx.designer.cs">
+      <DependentUpon>GioiThieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KhuyenMai.aspx.cs">
+      <DependentUpon>KhuyenMai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KhuyenMai.aspx.designer.cs">
+      <DependentUpon>KhuyenMai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LienHe.aspx.cs">
+      <DependentUpon>LienHe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LienHe.aspx.designer.cs">
+      <DependentUpon>LienHe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="db\UserDB.cs" />
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\Coupon.cs" />
+    <Compile Include="Objects\ProductType.cs" />
+    <Compile Include="Objects\Role.cs" />
+    <Compile Include="Objects\Product.cs" />
+    <Compile Include="Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SanPham.aspx.cs">
+      <DependentUpon>SanPham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SanPham.aspx.designer.cs">
+      <DependentUpon>SanPham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThanhToan.aspx.cs">
+      <DependentUpon>ThanhToan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThanhToan.aspx.designer.cs">
+      <DependentUpon>ThanhToan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimKiem.aspx.cs">
+      <DependentUpon>TimKiem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimKiem.aspx.designer.cs">
+      <DependentUpon>TimKiem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrangChu.aspx.cs">
+      <DependentUpon>TrangChu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrangChu.aspx.designer.cs">
+      <DependentUpon>TrangChu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\User.cs" />
+    <Compile Include="Web.Master.cs">
+      <DependentUpon>Web.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web.Master.designer.cs">
+      <DependentUpon>Web.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="README.md" />
+    <Content Include="admin\Admin.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Web.Master" />
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images\sanpham\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12468</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:12468/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
