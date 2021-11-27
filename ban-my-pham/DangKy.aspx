@@ -54,7 +54,7 @@
             <input runat="server" class="form-control" type="text" id="email" placeholder="Nhập email" />
         </div>
         <div class="center-children">
-            <asp:Button CssClass="button" ID="Button1" runat="server" Text="Đăng ký" />
+            <asp:Button CssClass="button" ID="Button1" runat="server" Text="Đăng ký 2" />
         </div>
     </div>
 </asp:Content>
