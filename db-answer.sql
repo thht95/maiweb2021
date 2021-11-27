@@ -1,1 +1,2 @@
-create new table
+-- create new table
+use BanMyPhamS
